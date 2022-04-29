@@ -1,0 +1,14 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/matanel/Desktop/CPP/coup-a'
+clang++-9 -std=c++2a -Werror -Wsign-conversion --compile Demo.cpp -o Demo.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion --compile Game.cpp -o Game.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion --compile Player.cpp -o Player.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion --compile Duke.cpp -o Duke.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion --compile Assassin.cpp -o Assassin.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion --compile Ambassador.cpp -o Ambassador.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion --compile Captain.cpp -o Captain.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion --compile Contessa.cpp -o Contessa.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion Demo.o Game.o Player.o Duke.o Assassin.o Ambassador.o Captain.o Contessa.o -o demo
+./demo
+make: Leaving directory '/home/matanel/Desktop/CPP/coup-a'
+ 
