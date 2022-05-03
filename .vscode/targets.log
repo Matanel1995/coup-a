@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Apr 29 19:16:10 2022
+# Make data base, printed on Tue May  3 16:08:03 2022
 
 # Variables
 
@@ -51,7 +53,7 @@ SNAP_DATA = /var/snap/code/94
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:31389
+JOURNAL_STREAM = 8:30454
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -63,7 +65,7 @@ MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/github-desktop.desktop
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
 USERNAME = matanel
 # makefile (from 'Makefile', line 9)
@@ -77,9 +79,11 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 910
+_ = /snap/code/94/usr/share/code/code
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-6fa97362-6e4f-49b6-9471-b2c58050d124.sock
+MANAGERPID = 921
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /home/matanel
 # environment
@@ -91,7 +95,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/matanel-VirtualBox:@/tmp/.ICE-unix/1213,unix/matanel-VirtualBox:/tmp/.ICE-unix/1213
+SESSION_MANAGER = local/matanel-VirtualBox:@/tmp/.ICE-unix/1225,unix/matanel-VirtualBox:/tmp/.ICE-unix/1225
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -109,17 +113,19 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 34359ff0686f41c3883a0f8f038b66c0
+INVOCATION_ID = 7c5722932ab5415189170f32e8345026
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/94/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
+LS_COLORS = 
+# environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3461
+GIO_LAUNCHED_DESKTOP_FILE_PID = 1990
 # automatic
 %F = $(notdir $%)
 # environment
@@ -135,15 +141,17 @@ PWD = /home/matanel/Desktop/CPP/coup-a
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1166
+SSH_AGENT_PID = 1178
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = Unity
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/matanel
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
@@ -181,9 +189,9 @@ SNAP_USER_DATA = /home/matanel/snap/code/94
 # environment
 SHLVL = 0
 # environment
-LOCAL_GIT_DIRECTORY = /usr/lib/github-desktop/resources/app/git
-# environment
 GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a723beeb-6331-4086-9608-40defb911509.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -206,6 +214,8 @@ MAKE_COMMAND := make
 LANGUAGE = en_IL:en
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-239e23a1-1.66.2-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -255,11 +265,11 @@ OBJECTS = $(subst .cpp,.o,$(SOURCES))
 # environment
 LANG = C
 # environment
-VSCODE_PID = 4565
+VSCODE_PID = 2122
 # makefile (from 'Makefile', line 6)
 TIDY_FLAGS = -extra-arg=-std=$(CXXVERSION) -checks=bugprone-*,clang-analyzer-*,cppcoreguidelines-*,performance-*,portability-*,readability-*,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-cppcoreguidelines-owning-memory --warnings-as-errors=-*
 # variable set hash-table stats:
-# Load=124/1024=12%, Rehash=0, Collisions=16/153=10%
+# Load=128/1024=12%, Rehash=0, Collisions=18/157=11%
 
 # Pattern-specific Variable Values
 
@@ -267,9 +277,10 @@ TIDY_FLAGS = -extra-arg=-std=$(CXXVERSION) -checks=bugprone-*,clang-analyzer-*,c
 
 # Directories
 
-# . (device 2053, inode 1058901): 26 files, no impossibilities.
+# . (device 2053, inode 1058901): 28 files, no impossibilities.
 
-# 26 files, no impossibilities in 1 directories.
+# 28 files, no impossibilities in 1 directories.
+ 
 
 # Implicit Rules
 
@@ -278,9 +289,6 @@ TIDY_FLAGS = -extra-arg=-std=$(CXXVERSION) -checks=bugprone-*,clang-analyzer-*,c
 	$(CXX) $(CXXFLAGS) --compile $< -o $@
 
 # 1 implicit rules, 0 (0.0%) terminal.
-
- 
-make: *** No rule to make target 'all'.  Stop.
 
 # Files
 
@@ -415,12 +423,12 @@ Player.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 49 / storage = 460 B / avg = 9 B
-# current buf: size = 8162 B / used = 460 B / count = 49 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 51 / storage = 479 B / avg = 9 B
+# current buf: size = 8162 B / used = 479 B / count = 51 / avg = 9 B
 
-# strcache performance: lookups = 69 / hit rate = 28%
+# strcache performance: lookups = 71 / hit rate = 28%
 # hash-table stats:
-# Load=49/8192=1%, Rehash=0, Collisions=1/69=1%
-# Finished Make data base on Fri Apr 29 19:16:10 2022
+# Load=51/8192=1%, Rehash=0, Collisions=1/71=1%
+# Finished Make data base on Tue May  3 16:08:03 2022
 
  

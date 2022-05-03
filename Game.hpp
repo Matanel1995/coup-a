@@ -13,7 +13,7 @@ namespace coup{
     class Player;
     class Game{
         public:
-        vector<Player*> gamePlayers;
+        vector<Player*>* gamePlayers;
         unsigned int currTurn;
         Game();
         ~Game();
@@ -22,11 +22,13 @@ namespace coup{
         //Function to add new player to the game
         void addPlayer(Player *player);
         //Function to revive player into a role
-        void revivePLayer(Player *player, unsigned int role);
+        void revivePlayer(Player *player);
         //
-        void validAction(Player *player);
+        bool isPlayerTurn(Player &player);
         //Function to remove player from the Game
         void removePLayer(Player &player);
+        //function to update the curr turn
+        void updateTurn();
         // Function to return player that it is his turn name  
         string turn();
         // Function to return the name of the winner in this game

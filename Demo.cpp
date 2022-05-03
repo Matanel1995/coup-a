@@ -33,9 +33,7 @@ int main() {
 	Ambassador ambassador{game_1, "Meirav"};
 	Captain captain{game_1, "Reut"};
 	Contessa contessa{game_1, "Gilad"};
-
 	vector<string> players = game_1.players();
-
 	/*
 		prints:
 		Moshe

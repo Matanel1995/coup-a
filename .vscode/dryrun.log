@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/matanel/Desktop/CPP/coup-a'
 clang++-9 -std=c++2a -Werror -Wsign-conversion --compile Demo.cpp -o Demo.o
 clang++-9 -std=c++2a -Werror -Wsign-conversion --compile Game.cpp -o Game.o

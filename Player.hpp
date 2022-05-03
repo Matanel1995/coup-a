@@ -16,8 +16,9 @@ namespace coup{
             Player(Game &game, const string & name, const string role);
             int money;
             string Name;
-            string Role;
+            string Prole;
             string lastAction;
+            int turnPos;
             //Function to return the role of the player
             string role();
             //Virtual function the the income becouse each role have different income.
