@@ -22,14 +22,27 @@ string Player::role(){
 }
 
 void Player::income(){
-    this->money++;
-    this->lastAction = "income";
-    cout << this->game->currTurn << endl;
-    this->game->updateTurn();
+    if(this->game->isPlayerTurn(*this)){
+        this->money++;
+        this->lastAction = "income";
+        //cout << this->game->currTurn << endl;
+        this->game->updateTurn();
+    }
+    else{
+        throw runtime_error("Not your turn!");
+    }
 }
 
 void Player::foreign_aid(){
-
+    if(this->game->isPlayerTurn(*this)){
+        this->money+=2;
+        this->lastAction = "foreign_aid";
+        //cout << this->game->currTurn << endl;
+        this->game->updateTurn();
+    }
+    else{
+        throw runtime_error("Not your turn!");
+    }
 }
 
 int Player::coins(){

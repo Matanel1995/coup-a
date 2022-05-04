@@ -24,7 +24,7 @@ namespace coup{
         //Function to revive player into a role
         void revivePlayer(Player *player);
         //
-        bool isPlayerTurn(Player &player);
+        bool isPlayerTurn(const Player &player);
         //Function to remove player from the Game
         void removePLayer(Player &player);
         //function to update the curr turn

@@ -28,13 +28,13 @@ void Game::revivePlayer(Player *player){
     this->gamePlayers->insert(this->gamePlayers->begin()+(player->turnPos -1),player);
 }
 
-bool Game::isPlayerTurn(Player &player){
+bool Game::isPlayerTurn(const Player &player){
     if(this->gamePlayers->at(this->currTurn) != &player){return false;}
     else{return true;}
 }
 
 void Game::updateTurn(){
-    if(this->currTurn == this->gamePlayers->size()){currTurn = 0;}
+    if(this->currTurn == this->gamePlayers->size() -1){currTurn = 0;}
     else{this->currTurn++;}
 }
 

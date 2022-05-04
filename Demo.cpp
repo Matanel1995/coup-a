@@ -63,6 +63,8 @@ int main() {
 		std::cerr << e.what() << '\n';
 	}
 	duke.income();
+	// cout << duke.coins() << endl;
+	// duke.tax();
 	assassin.foreign_aid();
 
 	// throws exception, the last operation duke performed
@@ -85,7 +87,6 @@ int main() {
 	{
 		std::cerr << e.what() << '\n';
 	}
-
 	duke.block(assassin);
 	cout << assassin.coins() << endl; // prints 1
 
