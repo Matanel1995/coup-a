@@ -19,6 +19,7 @@ namespace coup{
             string Prole;
             string lastAction;
             int turnPos;
+            bool isAlive;
             //Function to return the role of the player
             string role();
             //Virtual function the the income becouse each role have different income.

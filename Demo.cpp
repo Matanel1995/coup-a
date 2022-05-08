@@ -87,9 +87,10 @@ int main() {
 	{
 		std::cerr << e.what() << '\n';
 	}
+
 	duke.block(assassin);
 	cout << assassin.coins() << endl; // prints 1
-
+	
 	ambassador.transfer(duke, assassin); //transfers 1 coin from duke to assassin
 	captain.foreign_aid();
 	contessa.foreign_aid();
@@ -99,7 +100,7 @@ int main() {
 	ambassador.foreign_aid();
 	captain.steal(contessa);
 	contessa.foreign_aid();
-
+	
 	duke.tax();
 	// no exception, assassin can coup with only 3 coins
 	assassin.coup(duke);
@@ -116,9 +117,8 @@ int main() {
 	{
 		cout << name << endl;
 	}
-
 	contessa.block(assassin);
-
+	
 	players = game_1.players();
 	/*
 		prints:

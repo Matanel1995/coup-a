@@ -18,17 +18,16 @@ void Duke::tax(){
 
 void Duke::block(Player &player){
     // if its the duke turn and the player last move was foreign_aid we can block
-    if(this->game->isPlayerTurn(*this)){
-        if(player.lastAction == "foreign_aid"){
-            player.money -=2;
-            this->game->updateTurn();
-        }
-        else{
-            throw runtime_error("Last action was not foreign_aid!");
-        }
+    // if(this->game->isPlayerTurn(*this)){
+    if(player.lastAction == "foreign_aid"){
+        player.money -=2;
     }
     else{
-        throw runtime_error("This is not your turn!");
+        throw runtime_error("Last action was not foreign_aid!");
     }
+    // }
+    // else{
+    //     throw runtime_error("This is not your turn!");
+    // }
 
 }

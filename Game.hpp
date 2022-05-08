@@ -15,6 +15,11 @@ namespace coup{
         public:
         vector<Player*>* gamePlayers;
         unsigned int currTurn;
+        // Players pointers for each operation
+        Player* lastStolen;
+        Player* lastKilled;
+        Player* lastForAid;
+        // constructor and distractor
         Game();
         ~Game();
         // function to return all players names

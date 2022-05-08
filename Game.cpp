@@ -53,7 +53,9 @@ vector<string> Game::players(){
     vector<string> temp;
     // copy the players name (currently in game) and return new vector
     for(unsigned int i=0; i< this->gamePlayers->size();i++){
-        temp.push_back(this->gamePlayers->at(i)->Name);
+        if(this->gamePlayers->at(i)->isAlive == true){
+            temp.push_back(this->gamePlayers->at(i)->Name);
+        }
     }
     return temp;
 }
